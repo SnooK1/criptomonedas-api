@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 function consultarCriptomonedas(){
-    const url = 'https://min-api.cryptocompare.com/data/top/mktcapfull?limit=5&tsym=USD';
+    //const url = 'https://min-api.cryptocompare.com/data/top/mktcapfull?limit=5&tsym=USD';
+    const url ='https://min-api.cryptocompare.com/data/top/totaltoptiervolfull?limit=5&tsym=USD'
     
     fetch(url)// se ejecuta un prom
         .then( respuesta => respuesta.json())//la respuesta es un json
